@@ -1,0 +1,167 @@
+:root {
+  --primary: hsl(185, 75%, 39%);
+  --secondary: hsl(229, 23%, 23%);
+  --text-muted: hsl(227, 10%, 46%);
+  --neutral: hsl(0, 0%, 59%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.image-top > img {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 500px;
+  position: fixed;
+  top: -250px;
+  left: -350px;
+}
+.image-bottom > img {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 500px;
+  position: fixed;
+  top: 250px;
+  left: 150px;
+}
+
+.card {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  width: 325px;
+  height: 350px;
+  border-radius: 25px;
+  margin: 50px 10px;
+  z-index: 5;
+}
+
+.card-top {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 100%;
+}
+
+.card-top > img {
+  border-radius: 25px 25px 0 0;
+  width: 100%;
+}
+
+.card-main {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 0 0 25px 25px;
+}
+
+.card-main-profile-pic > img {
+  display: flex;
+  position: relative;
+  top: -50px;
+  bottom: -50px;
+  border-radius: 50px;
+  border: 5px solid white;
+}
+
+.card-main-info {
+  position: relative;
+  top: -50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.card-main-basic-info {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.container-basic-info {
+  display: flex;
+  flex-direction: row;
+}
+.card-main-name {
+  font-weight: bold;
+  padding: 5px;
+  font-size: large;
+}
+
+.card-main-age,
+.card-main-location {
+  color: var(--neutral);
+  padding: 5px;
+}
+.card-main-age {
+  font-size: large;
+}
+.card-main-location {
+  font-size: 0.9em;
+}
+
+.card-main-social-info {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.card-main-social-info span {
+  font-weight: bold;
+}
+
+.card-main-social-info-followers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+  font-size: 0.9em;
+}
+.card-main-social-info-likes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+  font-size: 0.9em;
+}
+.card-main-social-info-photos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+  font-size: 0.9em;
+}
+hr {
+  width: 100%;
+  height: 0;
+  border: 0;
+  border-top: 1px solid var(--text-muted);
+}
+.footer {
+  text-decoration: none;
+}
